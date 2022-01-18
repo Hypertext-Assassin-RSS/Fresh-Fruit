@@ -1,4 +1,10 @@
-# POS
+<p align="left"> <a href="https://twitter.com/sanjaya_rajith" target="blank"><img src="https://img.shields.io/twitter/follow/sanjaya_rajith?logo=twitter&style=for-the-badge" alt="sanjaya_rajith" /></a> </p>
+
+# Fresh Fruit Billing System
+
+**Description**
+
+This is a pos system developed for fruit market using HTML5 CSS and Bootstrap
 
 
 **Site Map =** https://www.gloomaps.com/9lP93mfZya
