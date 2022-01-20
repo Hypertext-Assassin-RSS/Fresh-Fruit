@@ -7,8 +7,8 @@
 **Description**  
 This is a pos system developed for fruit market using HTML5 CSS and Bootstrap
 
-**Site Map =** https://www.gloomaps.com/9lP93mfZya
+Site Map   **https://www.gloomaps.com/9lP93mfZya**
 
-**Wire Frame =** https://wireframe.cc/e4x6LL
+Wire Frame **https://wireframe.cc/e4x6LL**
 
-**Mockup =** https://www.figma.com/file/0s4VfiXw3nGZ40cZaqmQLH/FreshFruit?node-id=0%3A1
+Mockup     **https://www.figma.com/file/0s4VfiXw3nGZ40cZaqmQLH/FreshFruit?node-id=0%3A1**
