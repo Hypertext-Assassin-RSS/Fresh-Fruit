@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 </head>
 <header>
     <nav class="navbar navbar-dark bg-danger">
         <div class="container-fluid">
-            <a class="navbar-brand font-monospace #ffff" href="#" >
-                <img src="/assets/img/icon.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+            <a class="navbar-brand font-family: 'Mochiy Pop P One', sans-serif; #ffff fs-3 fw-bolder" href="#" >
+                <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
                 Fresh Fruit
             </a>
         </div>
     </nav>
 </header>
 <body>
-
+<main>
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+    <div class="d-flex w-100" >
+        <div class="nav flex-column nav-pills  w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+            <button class="nav-link active" id="v-pills-Dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Dashboard" type="button" role="tab" aria-controls="v-pills-Dashboard" aria-selected="true">Dashboard</button>
+            <button class="nav-link" id="v-pills-Order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Order" type="button" role="tab" aria-controls="v-pills-Order" aria-selected="false">Order</button>
+            <button class="nav-link" id="v-pills-Item-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Item" type="button" role="tab" aria-controls="v-pills-Item" aria-selected="false">Item</button>
+            <button class="nav-link" id="v-pills-Member-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Member" type="button" role="tab" aria-controls="v-pills-Member" aria-selected="false">Member</button>
+        </div>
+    </div>
+</div>
+</main>
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
