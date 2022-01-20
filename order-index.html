@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+</head>
+<header>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand font-family: 'Mochiy Pop P One', sans-serif; #ffff fs-3 fw-bolder" href="#" >
+                <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                Fresh Fruit
+            </a>
+        </div>
+    </nav>
+</header>
+<body>
+<main>
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+        <div class="d-flex w-100" >
+            <div class="nav flex-column nav-pills  w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
+                <button class="nav-link" id="v-pills-Dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Dashboard" type="button" role="tab" aria-controls="v-pills-Dashboard" aria-selected="false">Dashboard</button>
+                <button class="nav-link active" id="v-pills-Order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Order" type="button" role="tab" aria-controls="v-pills-Order" aria-selected="true">Order</button>
+                <button class="nav-link" id="v-pills-Item-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Item" type="button" role="tab" aria-controls="v-pills-Item" aria-selected="false">Item</button>
+                <button class="nav-link" id="v-pills-Member-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Member" type="button" role="tab" aria-controls="v-pills-Member" aria-selected="false">Member</button>
+            </div>
+        </div>
+    </div>
+    <section class="w-50 ">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">QTY</th>
+                <th scope="col">Single Price</th>
+                <th scope="col">Total Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Apple</td>
+                <td>2</td>
+                <td>50</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Orange</td>
+                <td>5</td>
+                <td>30</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Mango</td>
+                <td>70</td>
+                <td>3</td>
+                <td>210</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">9</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">10</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="d-flex flex-column position-relative top-0 start-25" style="width: 30vw">
+        <button type="button" class="btn btn-warning w-50  position-relative top-0 start-50 translate-middle-x mt-3">Add</button>
+        <div class="w-75 h-75  border border-primary rounded position-relative top-0 start-50 translate-middle-x mt-5 bg-info">
+            <div class="w-100 bg-secondary">
+                <div style="width: max-content" class="position-relative top-0 start-50 translate-middle-x text-white">Bill</div>
+            </div>
+        </div>
+        <section class="d-flex justify-content-evenly mt-3">
+            <div class="w-25"><button type="button" class="btn btn-danger w-100" >Clear</button></div>
+            <div class="w-25"><button type="button" class="btn btn-primary w-100">Checkout</button></div>
+        </section>
+    </section>
+    <!--<div>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>-->
+</main>
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
