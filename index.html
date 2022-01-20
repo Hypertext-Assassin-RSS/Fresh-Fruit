@@ -13,7 +13,7 @@
 <header>
     <nav class="navbar navbar-dark bg-danger">
         <div class="container-fluid">
-            <a class="navbar-brand font-family: 'Mochiy Pop P One', sans-serif; #ffff fs-3 fw-bolder" href="#" >
+            <a class="navbar-brand font-family: 'Mochiy Pop P One', sans-serif; #ffff fs-3 fw-bolder" href="#">
                 <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
                 Fresh Fruit
             </a>
@@ -22,16 +22,28 @@
 </header>
 <body>
 <main>
-<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-    <div class="d-flex w-100" >
-        <div class="nav flex-column nav-pills  w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical" >
-            <button class="nav-link active" id="v-pills-Dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Dashboard" type="button" role="tab" aria-controls="v-pills-Dashboard" aria-selected="true">Dashboard</button>
-            <button class="nav-link" id="v-pills-Order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Order" type="button" role="tab" aria-controls="v-pills-Order" aria-selected="false">Order</button>
-            <button class="nav-link" id="v-pills-Item-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Item" type="button" role="tab" aria-controls="v-pills-Item" aria-selected="false">Item</button>
-            <button class="nav-link" id="v-pills-Member-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Member" type="button" role="tab" aria-controls="v-pills-Member" aria-selected="false">Member</button>
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+        <div class="d-flex w-100">
+            <div class="text-sm-center nav flex-column nav-pills  w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="text-sm-center nav-link active"
+                   type="button" role="tab"  href="index.html">
+                    Dashboard
+                </a>
+                <a class="text-sm-center nav-link"
+                   type="button" role="tab"  href="order-index.html">
+                    Order
+                </a>
+                <a class="text-sm-center nav-link"
+                   type="button" role="tab"  href="item-index.html">
+                    Item
+                </a>
+                <a class="text-sm-center nav-link"
+                   type="button" role="tab"  href="">
+                    Member
+                </a>
+            </div>
         </div>
     </div>
-</div>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
