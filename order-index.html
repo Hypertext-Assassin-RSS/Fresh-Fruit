@@ -135,9 +135,53 @@
         </button>
         <div class="w-75 h-75  border border-primary rounded position-relative top-0 start-50 translate-middle-x mt-5 bg-info">
             <div class="w-100 bg-secondary">
-                <div style="width: max-content" class="position-relative top-0 start-50 translate-middle-x text-white">
-                    Bill
-                </div>
+                <div style="width: max-content" class="position-relative top-0 start-50 translate-middle-x text-white">Bill</div>
+                <section class="position-absolute d-flex top-0 start-50 translate-middle-x mt-5 flex-column  w-75 h-100">
+                    <form>
+                        <label class="form-label" for="inputGroupSelect01">Select Members</label>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect01">
+                                <option selected>Members</option>
+                                <option value="1">M001</option>
+                                <option value="2">M002</option>
+                                <option value="3">M003</option>
+                                <option value="3">M004</option>
+                                <option value="3">M005</option>
+                            </select>
+                        </div>
+                        <label class="form-label" for="inputGroupSelect02">Cashier</label>
+                        <div class="input-group mb-3">
+                            <select class="form-select" id="inputGroupSelect02">
+                                <option selected>Cashier</option>
+                                <option value="1">Nimal</option>
+                                <option value="2">Damith</option>
+                                <option value="3">Nimmi</option>
+                                <option value="3">Sonali</option>
+                                <option value="3">Rupun</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="QTY" class="form-label">Total QTY</label>
+                            <input type="text" class="form-control" id="QTY" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Sum" class="form-label">Sum</label>
+                            <input type="text" class="form-control" id="Sum">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Discount" class="form-label">Discount</label>
+                            <input type="text" class="form-control" id="Discount">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Total" class="form-label">Total</label>
+                            <input type="text" class="form-control" id="Total">
+                        </div>
+                        <!--<div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check</label>
+                        </div>-->
+                    </form>
+                </section>
             </div>
         </div>
         <section class="d-flex justify-content-evenly mt-3">
