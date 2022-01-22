@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Order</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 </head>
 <header>
     <nav class="navbar navbar-dark bg-danger">
         <div class="container-fluid">
             <a class="navbar-brand  #ffff fs-3" href="index.html" style="font-family: 'Mochiy Pop P One', sans-serif;">
-                <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
+                <img alt="" class="d-inline-block align-text-top" height="40" src="/assets/img/icon.png" width="40">
                 Fresh Fruit
             </a>
         </div>
@@ -24,21 +24,22 @@
 <main>
     <div class="d-flex flex-column flex-shrink-0 pt-3 bg-light" style="width: 12vw;">
         <div class="d-flex w-100">
-            <div class="text-sm-center nav flex-column nav-pills  w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div aria-orientation="vertical" class="text-sm-center nav flex-column nav-pills  w-100" id="v-pills-tab"
+                 role="tablist">
                 <a class="text-sm-center nav-link"
-                   type="button" role="tab"  href="index.html">
+                   href="index.html" role="tab" type="button">
                     Dashboard
                 </a>
                 <a class="text-sm-center nav-link active"
-                   type="button" role="tab"  href="order-index.html">
+                   href="order-index.html" role="tab" type="button">
                     Order
                 </a>
                 <a class="text-sm-center nav-link"
-                      type="button" role="tab"  href="item-index.html">
+                   href="item-index.html" role="tab" type="button">
                     Item
                 </a>
                 <a class="text-sm-center nav-link"
-                      type="button" role="tab"  href="member-index.html">
+                   href="member-index.html" role="tab" type="button">
                     Member
                 </a>
             </div>
@@ -129,14 +130,56 @@
             </tbody>
         </table>
     </section>
-    <section class="d-flex flex-column position-relative top-0 start-25" style="width: 30vw">
-        <button type="button" class="btn btn-warning w-50  position-relative top-0 start-50 translate-middle-x mt-3">
-            Add
+    <div class="d-flex flex-column position-relative top-0 start-25" style="width: 30vw">
+        <button class="btn btn-warning w-50  position-relative top-0 start-50 translate-middle-x mt-3 " data-bs-target="#exampleModal"
+                data-bs-toggle="modal" type="button"> Add
         </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 h-100 border border-primary d-flex ">
+                        <section class="  w-100 d-flex flex-column" style="height: 100%">
+                            <div class=" " style="height: calc(100%/3)"><img src="assets/img/Fruits/1.jpeg" class="img-fluid h-100" alt="..."></div>
+                            <div class=" " style="height: calc(100%/3)"><img src="assets/img/Fruits/2.jpg" class="img-fluid h-100" alt="..."></div>
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/3.jpg" class="img-fluid h-100" alt="..."></div>
+                            <!--<div class="border border-secondary h-100"></div>
+                            <div class="border border-secondary h-100"></div>-->
+                        </section>
+                        <section class="  w-100 d-flex flex-column">
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/4.jpg" class="img-fluid h-100" alt="..."></div>
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/5.jpg" class="img-fluid h-100" alt="..."></div>
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/6.jpg" class="img-fluid h-100" alt="..."></div>
+                        </section>
+                        <section class="  w-100 d-flex flex-column">
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/7.jpg" class="img-fluid h-100" alt="..."></div>
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/8.jpg" class="img-fluid h-100" alt="..."></div>
+                            <div class="  " style="height: calc(100%/3)"><img src="assets/img/Fruits/9.jpg" class="img-fluid h-100" alt="..."></div>
+                        </section>
+                        <section class="  w-100 d-flex flex-column">
+
+                        </section>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="w-75 h-75  border border-primary rounded position-relative top-0 start-50 translate-middle-x mt-5 bg-info">
             <div class="w-100 bg-secondary">
-                <div style="width: max-content" class="position-relative top-0 start-50 translate-middle-x text-white">Bill</div>
-                <section class="position-absolute d-flex top-0 start-50 translate-middle-x mt-5 flex-column  w-75 h-100">
+                <div class="position-relative top-0 start-50 translate-middle-x text-white" style="width: max-content">
+                    Bill
+                </div>
+                <section
+                        class="position-absolute d-flex top-0 start-50 translate-middle-x mt-5 flex-column  w-75 h-100">
                     <form>
                         <label class="form-label" for="inputGroupSelect01">Select Members</label>
                         <div class="input-group mb-3">
@@ -161,20 +204,20 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="QTY" class="form-label">Total QTY</label>
-                            <input type="text" class="form-control" id="QTY" aria-describedby="emailHelp">
+                            <label class="form-label" for="QTY">Total QTY</label>
+                            <input aria-describedby="emailHelp" class="form-control" id="QTY" type="text">
                         </div>
                         <div class="mb-3">
-                            <label for="Sum" class="form-label">Sum</label>
-                            <input type="text" class="form-control" id="Sum">
+                            <label class="form-label" for="Sum">Sum</label>
+                            <input class="form-control" id="Sum" type="text">
                         </div>
                         <div class="mb-3">
-                            <label for="Discount" class="form-label">Discount</label>
-                            <input type="text" class="form-control" id="Discount">
+                            <label class="form-label" for="Discount">Discount</label>
+                            <input class="form-control" id="Discount" type="text">
                         </div>
                         <div class="mb-3">
-                            <label for="Total" class="form-label">Total</label>
-                            <input type="text" class="form-control" id="Total">
+                            <label class="form-label" for="Total">Total</label>
+                            <input class="form-control" id="Total" type="text">
                         </div>
                         <!--<div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -186,13 +229,13 @@
         </div>
         <section class="d-flex justify-content-evenly mt-3">
             <div class="w-25">
-                <button type="button" class="btn btn-danger w-100">Clear</button>
+                <button class="btn btn-danger w-100" type="button">Clear</button>
             </div>
             <div class="w-25">
-                <button type="button" class="btn btn-primary w-100">Checkout</button>
+                <button class="btn btn-primary w-100" type="button">Checkout</button>
             </div>
         </section>
-    </section>
+    </div>
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
