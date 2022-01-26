@@ -1,8 +1,8 @@
 main{
     display: flex;
-    height: 90vh;
-    overflow-x: auto;
-    overflow-y: hidden;
+    height: 92.5vh;
+    /*overflow-x: auto;
+    overflow-y: hidden;*/
 }
 .nav-pills .nav-link.active{
     width: 100%;
