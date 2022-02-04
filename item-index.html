@@ -263,128 +263,166 @@
         </div>
     </nav>
 </header>
-<main class="justify-content-evenly">
-    <section class="m-5" style="width:200%">
-        <table class="table table-hover w-100">
-            <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Item</th>
-                <th scope="col">QTY</th>
-                <th scope="col">Single Price</th>
-                <th scope="col">Total Price</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Apple</td>
-                <td>2</td>
-                <td>50</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Orange</td>
-                <td>5</td>
-                <td>30</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Mango</td>
-                <td>70</td>
-                <td>3</td>
-                <td>210</td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">8</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">9</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">10</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-    <div class="w-25 d-flex flex-column " style="width: 10vw">
-        <button type="button" class="btn btn-warning  position-absolute bottom-0 m-3" data-bs-toggle="modal" data-bs-target="#exampleModal" >Add new Item</button>
+<div id="item" style="display: inline">
+    <section class="d-flex justify-content-evenly position-relative" style="height: 90vh;width: 100vw">
+        <section class="d-flex flex-column justify-content-center" style="width: 50vw">
+            <div class="">
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <img src="assets/img/icon.png" alt="">
-                        <h5 class="modal-title ms-2" id="exampleModalLabel">Add Item</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="item-name" class="col-form-label">Item:</label>
-                                <input type="text" class="form-control" id="item-name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="QTY" class="col-form-label">QTY:</label>
-                                <input type="text" class="form-control" id="QTY">
-                            </div>
-                            <div class="mb-3">
-                                <label for="singlePrice" class="col-form-label">Single Price:</label>
-                                <input type="text" class="form-control" id="singlePrice">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save</button>
+                <div class="mb-3">
+
+                    <label class="col-form-label" for="search"
+                           style="font-family: 'Source Serif 4', sans-serif; font-size: 30px">Search</label>
+
+                    <input class="form-control w-50" id="Search" type="text">
+                    <button class="btn btn-dark mt-3">Search</button>
+                    <hr>
+                </div>
+
+            </div>
+            <section class="m-5 position-relative h-50" style="width:100%;">
+
+                <table class="table table-hover w-100">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Single Price</th>
+                        <th scope="col">Total Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Apple</td>
+                        <td>2</td>
+                        <td>50</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Orange</td>
+                        <td>5</td>
+                        <td>30</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Mango</td>
+                        <td>70</td>
+                        <td>3</td>
+                        <td>210</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">7</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">8</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <div class="w-25 h-75 position-relative" style="top: 60px">
+            <form>
+                <div class="mb-3">
+                    <label class="col-form-label" for="item-name">Item:</label>
+                    <input class="form-control" id="item-name" type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label" for="QTY">QTY:</label>
+                    <input class="form-control" id="QTY" type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label" for="singlePrice">Single Price:</label>
+                    <input class="form-control" id="singlePrice" type="text">
+                </div>
+            </form>
+            <div class="d-flex w-100 justify-content-evenly">
+                <button class="btn btn-warning w-25" type="button">SAVE</button>
+                <button class="btn btn-danger w-25" type="button">CLEAR</button>
+            </div>
+        </div>
+        <!--<div class="w-25 d-flex flex-column " style="width: 10vw">
+            <button type="button" class="btn btn-warning  position-absolute bottom-0 m-3" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Add new Item</button>
+
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img src="assets/img/icon.png" alt="">
+                            <h5 class="modal-title ms-2" id="exampleModalLabel2">Add Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="item-name" class="col-form-label">Item:</label>
+                                    <input type="text" class="form-control" id="item-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="QTY" class="col-form-label">QTY:</label>
+                                    <input type="text" class="form-control" id="QTY">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="singlePrice" class="col-form-label">Single Price:</label>
+                                    <input type="text" class="form-control" id="singlePrice">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</main>
+        </div>-->
+    </section>
+</div>
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
