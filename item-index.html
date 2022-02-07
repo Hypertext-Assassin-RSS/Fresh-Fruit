@@ -280,88 +280,16 @@
 
             </div>
             <section class="m-5 position-relative h-50" style="width:100%;">
-
-                <table class="table table-hover w-100">
+                <table class="table table-hover w-100" >
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Item</th>
                         <th scope="col">QTY</th>
                         <th scope="col">Single Price</th>
-                        <th scope="col">Total Price</th>
                     </tr>
                     </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Apple</td>
-                        <td>2</td>
-                        <td>50</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Orange</td>
-                        <td>5</td>
-                        <td>30</td>
-                        <td>150</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Mango</td>
-                        <td>70</td>
-                        <td>3</td>
-                        <td>210</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">4</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">5</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">6</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">7</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">9</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">10</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                    <tbody id="itemTable">
+
                     </tbody>
                 </table>
             </section>
@@ -382,7 +310,7 @@
                 </div>
             </form>
             <div class="d-flex w-100 justify-content-evenly">
-                <button class="btn btn-warning w-25" type="button">SAVE</button>
+                <button class="btn btn-warning w-25" type="button" id="btnSave">SAVE</button>
                 <button class="btn btn-danger w-25" type="button">CLEAR</button>
             </div>
         </div>
@@ -424,5 +352,30 @@
     </section>
 </div>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+    $('#btnSave').click(function () {
+
+        $('#itemTable>tr').off("click")
+
+        let Item = $('#item-name').val();
+        let QTY = $('#QTY').val();
+        let SinglePrice = $('#singlePrice').val();
+
+        let row = `<tr><td>${Item}</td><td>${QTY}</td><td>${SinglePrice}</td></tr>`;
+
+        $('#itemTable').append(row);
+
+        $('#itemTable>tr').click(function () {
+            let item =  $(this).children(":nth-child(1)").text();
+            let qty =  $(this).children(":nth-child(2)").text();
+            let price =  $(this).children(":nth-child(3)").text();
+
+            $('#item-name').val(item);
+            $('#QTY').val(qty);
+            $('#singlePrice').val(price);
+        });
+    });
+</script>
 </body>
 </html>
