@@ -14,16 +14,18 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container-fluid">
-            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html" style="font-family: 'Mochiy Pop P One', sans-serif;">
+            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html"
+               style="font-family: 'Mochiy Pop P One', sans-serif;">
                 <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
                 Fresh Fruit
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link"  href="dashboard-index.html">Dashboard</a>
+                    <a class="nav-link" href="dashboard-index.html">Dashboard</a>
                     <a class="nav-link " href="index.html">Order</a>
                     <a class="nav-link" href="member-index.html">Members</a>
                     <a class="nav-link active" aria-current="page" href="item-index.html">Item</a>
@@ -32,7 +34,8 @@
         </div>
         <div class="top-0 bottom-0 m-auto" style="right: 0 ; position: absolute;top: 0 ">
             <!--Dayspedia.com widget-->
-            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com" id="dayspedia_widget_3d64e3541c092443"
+            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com"
+                 id="dayspedia_widget_3d64e3541c092443"
                  lang="en" nightsign="true" style="background-image: none;  "
                  sun="false">
 
@@ -214,7 +217,8 @@
                 </style>
 
 
-                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/" style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
+                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/"
+                   style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
                    target="_blank">
                     <svg style="position:absolute;right:8px;bottom:0;width:16px;height:16px" viewbox="0 0 16 16"
                          xmlns="http://www.w3.org/2000/svg">
@@ -222,11 +226,17 @@
                     </svg>
 
                 </a>
-                <div class="DPDCh d-none" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">Current Time in Colombo</div>
-                <div class="DPDCt" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
-                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span class="DPDCt12">pm</span>
+                <div class="DPDCh d-none"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">
+                    Current Time in Colombo
                 </div>
-                <div class="DPDCd" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                <div class="DPDCt"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span
+                        class="DPDCt12">pm</span>
+                </div>
+                <div class="DPDCd"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
                     <span class="DPDCdt">Sun, January 23</span><span class="DPDCtn" style=""><i></i></span>
                 </div>
 
@@ -280,7 +290,7 @@
 
             </div>
             <section class="m-5 position-relative h-50" style="width:100%;">
-                <table class="table table-hover w-100" >
+                <table class="table table-hover w-100">
                     <thead>
                     <tr>
                         <th scope="col">Item</th>
@@ -299,64 +309,37 @@
                 <div class="mb-3">
                     <label class="col-form-label" for="item-name">Item:</label>
                     <input class="form-control" id="item-name" type="text">
+                    <small id="error1">Last 2 Character Long</small>
                 </div>
                 <div class="mb-3">
                     <label class="col-form-label" for="QTY">QTY:</label>
                     <input class="form-control" id="QTY" type="text">
+                    <small id="error2">Only Numbers</small>
                 </div>
                 <div class="mb-3">
                     <label class="col-form-label" for="singlePrice">Single Price:</label>
                     <input class="form-control" id="singlePrice" type="text">
+                    <small id="error3">Only Numbers</small>
                 </div>
             </form>
             <div class="d-flex w-100 justify-content-evenly">
                 <button class="btn btn-warning w-25" type="button" id="btnSave">SAVE</button>
-                <button class="btn btn-danger w-25" type="button">CLEAR</button>
+                <button class="btn btn-danger w-25" type="button" id="btnClear">CLEAR</button>
             </div>
         </div>
-        <!--<div class="w-25 d-flex flex-column " style="width: 10vw">
-            <button type="button" class="btn btn-warning  position-absolute bottom-0 m-3" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Add new Item</button>
-
-            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <img src="assets/img/icon.png" alt="">
-                            <h5 class="modal-title ms-2" id="exampleModalLabel2">Add Item</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="item-name" class="col-form-label">Item:</label>
-                                    <input type="text" class="form-control" id="item-name">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="QTY" class="col-form-label">QTY:</label>
-                                    <input type="text" class="form-control" id="QTY">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="singlePrice" class="col-form-label">Single Price:</label>
-                                    <input type="text" class="form-control" id="singlePrice">
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
     </section>
 </div>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
+    $('#btnSave').prop("disabled", true);
+    $("#btnClear").prop("disabled",true);
+
+    $("#singlePrice").val("Rs:")
+
     $('#btnSave').click(function () {
 
-        $('#itemTable>tr').off("click")
+        $('#itemTable>tr').off("click", "dblclick")
 
         let Item = $('#item-name').val();
         let QTY = $('#QTY').val();
@@ -366,16 +349,97 @@
 
         $('#itemTable').append(row);
 
+        $('#btnSave').prop("disabled", true);
+
+        $('#itemTable>tr').dblclick(function () {
+            $(this).remove();
+        });
+
         $('#itemTable>tr').click(function () {
-            let item =  $(this).children(":nth-child(1)").text();
-            let qty =  $(this).children(":nth-child(2)").text();
-            let price =  $(this).children(":nth-child(3)").text();
+            let item = $(this).children(":nth-child(1)").text();
+            let qty = $(this).children(":nth-child(2)").text();
+            let price = $(this).children(":nth-child(3)").text();
 
             $('#item-name').val(item);
             $('#QTY').val(qty);
             $('#singlePrice').val(price);
         });
     });
+
+    $("#item-name").keyup(function (event) {
+
+        let RegExp = /^[A-z]{2,10}$/;
+        let input = $("#item-name").val();
+        if (RegExp.test(input)) {
+            $("#item-name").css("border", "2px solid blue");
+            $("#error1").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            if (event.key == "Enter") {
+                $("#QTY").focus();
+            }
+
+        } else {
+            $("#item-name").css("border", "2px solid red");
+            $("#error1").text("Least 2 Characters Need !");
+            $("#error1").css("color", "red");
+        }
+    });
+
+    $("#QTY").keyup(function (event) {
+
+        let RegExp = /^[0-9]{1,10}$/;
+        let input = $("#QTY").val();
+        if (RegExp.test(input)) {
+            $("#QTY").css("border", "2px solid blue");
+            $("#error2").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            if (event.key == "Enter") {
+                $("#singlePrice").focus();
+            }
+
+        } else {
+            $("#QTY").css("border", "2px solid red");
+            $("#error2").text("Only Numbers !");
+            $("#error2").css("color", "red");
+        }
+    });
+
+    $("#singlePrice").keyup(function (event) {
+
+        let RegExp = /^(Rs:)[0-9]{2,10}$/;
+        let input = $("#singlePrice").val();
+        if (RegExp.test(input)) {
+            $("#singlePrice").css("border", "2px solid blue");
+            $("#error3").text("  ");
+
+            $("#btnClear").prop("disabled",false);
+
+            $('#btnSave').prop("disabled", false);
+
+
+            if (event.key == "Enter") {
+                $("#btnSave").focus();
+            }
+        } else {
+            $("#singlePrice").css("border", "2px solid red");
+            $("#error3").text("Only Numbers !");
+            $("#error3").css("color", "red");
+        }
+    });
+
+
+    $("#btnClear").click(function () {
+        $("#item-name").val("");
+        $("#QTY").val("");
+        $("#singlePrice").val("");
+        $("#btnSave").prop("disabled",true);
+        $("#btnClear").prop("disabled",true);
+    });
+
 </script>
 </body>
 </html>

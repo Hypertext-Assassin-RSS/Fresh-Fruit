@@ -10,14 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
 </head>
+<style>
+    #myChart{
+        width: 90vw !important;
+        height: 90vh !important;
+    }
+</style>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <div class="container-fluid">
-            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html" style="font-family: 'Mochiy Pop P One', sans-serif;">
+            <a class="navbar-brand  #ffff fs-3" href="dashboard-index.html"
+               style="font-family: 'Mochiy Pop P One', sans-serif;">
                 <img src="/assets/img/icon.png" alt="" width="40" height="40" class="d-inline-block align-text-top">
                 Fresh Fruit
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -31,7 +39,8 @@
         </div>
         <div class="top-0 bottom-0 m-auto" style="right: 0 ; position: absolute;top: 0 ">
             <!--Dayspedia.com widget-->
-            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com" id="dayspedia_widget_3d64e3541c092443"
+            <div ampm="true" cityid="9947" class="DPDC bg-danger" host="https://dayspedia.com"
+                 id="dayspedia_widget_3d64e3541c092443"
                  lang="en" nightsign="true" style="background-image: none;  "
                  sun="false">
 
@@ -213,7 +222,8 @@
                 </style>
 
 
-                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/" style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
+                <a class="DPl w-100" href="https://dayspedia.com/time/lk/Colombo/"
+                   style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0"
                    target="_blank">
                     <svg style="position:absolute;right:8px;bottom:0;width:16px;height:16px" viewbox="0 0 16 16"
                          xmlns="http://www.w3.org/2000/svg">
@@ -221,11 +231,17 @@
                     </svg>
 
                 </a>
-                <div class="DPDCh d-none" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">Current Time in Colombo</div>
-                <div class="DPDCt" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
-                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span class="DPDCt12">pm</span>
+                <div class="DPDCh d-none"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold; font-size: 12px;">
+                    Current Time in Colombo
                 </div>
-                <div class="DPDCd" style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                <div class="DPDCt"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
+                    <span class="DPDCth">09</span><span class="DPDCtm">47</span><span class="DPDCts">14</span><span
+                        class="DPDCt12">pm</span>
+                </div>
+                <div class="DPDCd"
+                     style="text-align: center; margin-left: auto; margin-right: auto; font-weight: bold;">
                     <span class="DPDCdt">Sun, January 23</span><span class="DPDCtn" style=""><i></i></span>
                 </div>
 
@@ -264,8 +280,38 @@
 </header>
 <body>
 <main class="justify-content-evenly">
+    <canvas id="myChart" style=""></canvas>
 
 </main>
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script>
+    let xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+    let yValues = [55, 49, 44, 24, 15];
+    let barColors = [
+        "#b91d47",
+        "#00aba9",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145"
+    ];
+
+    new Chart("myChart", {
+        type: "doughnut",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "World Wide Wine Production 2018"
+            }
+        }
+    });
+</script>
 </body>
 </html>
